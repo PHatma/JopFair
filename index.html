@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Transactions</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+      <h1 class="text-center">Customer Transactions</h1>
+      <div class="container">
+        <div class="py-5 ">
+          <input id="searchInput" type="search" class="form-control" placeholder="Search By customer Name"/>
+        </div>
+        <table class="table table-bordered ">
+          <thead class="table-info text-center">
+            <tr>
+              <th>Name</th>
+              <th>Total Transaction Amount</th>
+              <th>Transactions per day</th>
+            </tr>
+          </thead>
+          <tbody id="body" class="text-center table-light">
+                   
+          </tbody>
+        </table>
+        <div id="chartContainer">
+          <canvas id="transactionChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
